@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		012CD970EB1CB0935E180E1E /* Pods_Generic_Network_Layer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6815EC14BBA2DEC6DD8BFE94 /* Pods_Generic_Network_Layer.framework */; };
+		1547C6FD267F103900959031 /* ErrorGenerics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1547C6FC267F103900959031 /* ErrorGenerics.swift */; };
 		15F28DE9267EBFC6002D7866 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F28DE8267EBFC6002D7866 /* AppDelegate.swift */; };
 		15F28DEB267EBFC6002D7866 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F28DEA267EBFC6002D7866 /* SceneDelegate.swift */; };
 		15F28DF0267EBFC6002D7866 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15F28DEE267EBFC6002D7866 /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1547C6FC267F103900959031 /* ErrorGenerics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorGenerics.swift; sourceTree = "<group>"; };
 		15F28DE5267EBFC6002D7866 /* Generic Network Layer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Generic Network Layer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		15F28DE8267EBFC6002D7866 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15F28DEA267EBFC6002D7866 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1547C6FB267F102300959031 /* ErrorGenerics */ = {
+			isa = PBXGroup;
+			children = (
+				1547C6FC267F103900959031 /* ErrorGenerics.swift */,
+			);
+			path = ErrorGenerics;
+			sourceTree = "<group>";
+		};
 		15F28DDC267EBFC6002D7866 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +111,7 @@
 		15F63A44267EF1CC008512EA /* NetworkLayer */ = {
 			isa = PBXGroup;
 			children = (
+				1547C6FB267F102300959031 /* ErrorGenerics */,
 				15F63A58267EF917008512EA /* Users */,
 				15F63A53267EF30F008512EA /* Base */,
 			);
@@ -366,6 +377,7 @@
 				15F63A5C267EFB4B008512EA /* BaseResponse.swift in Sources */,
 				15F63A5E267EFBEA008512EA /* UsersInteractor.swift in Sources */,
 				15F63A5A267EF925008512EA /* UsersNetworking.swift in Sources */,
+				1547C6FD267F103900959031 /* ErrorGenerics.swift in Sources */,
 				15F63A64267F0093008512EA /* UsersViewCell.swift in Sources */,
 				15F63A57267EF52D008512EA /* BaseAPI.swift in Sources */,
 				15F63A61267EFBFB008512EA /* UsersModel.swift in Sources */,

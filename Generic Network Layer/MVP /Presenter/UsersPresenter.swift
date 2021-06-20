@@ -42,15 +42,17 @@ class UsersPresenter {
         userInteractor.getUsers { [weak self] (result) in
             guard let self = self else { return }
             // Hide Indicator
-            self.view?.hideIndicator()
-            switch result {
-            case .success(let response):
-                guard let response = response else { return }
-                guard let data = response.data else { return }
-                self.users = data
-                self.view?.fetchUserData()
-            case .failure(let error):
-                self.view?.ErrorUserData(error: error.localizedDescription)
+            DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+                self.view?.hideIndicator()
+                switch result {
+                case .success(let response):
+                    guard let response = response else { return }
+                    guard let data = response.data else { return }
+                    self.users = data
+                    self.view?.fetchUserData()
+                case .failure(let error):
+                    self.view?.ErrorUserData(error: error.localizedDescription)
+                }
             }
         }
     }
@@ -66,5 +68,5 @@ class UsersPresenter {
         cell.displaySecondName(secondName: user.secondName!)
         cell.displayEmail(email: user.email!)
     }
-        
+    
 }

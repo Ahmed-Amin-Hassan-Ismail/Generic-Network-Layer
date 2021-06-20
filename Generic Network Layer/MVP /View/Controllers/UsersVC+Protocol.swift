@@ -27,6 +27,7 @@ extension UsersViewController: UsersView {
     
     func ErrorUserData(error: String) {
         print(error)
+        showAlert()
     }
     
     
