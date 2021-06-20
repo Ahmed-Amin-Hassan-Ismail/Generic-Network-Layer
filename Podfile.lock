@@ -1,16 +1,20 @@
 PODS:
   - Alamofire (5.1.0)
+  - KRActivityIndicatorView (3.0.7)
 
 DEPENDENCIES:
   - Alamofire
+  - KRActivityIndicatorView
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - KRActivityIndicatorView
 
 SPEC CHECKSUMS:
   Alamofire: 9d5c5f602928e512395b30950c5984eca840093c
+  KRActivityIndicatorView: ad69e89c4ce40c986cf580595be4829dcad0e35a
 
-PODFILE CHECKSUM: b486c3deeb81ae550fc3a8f5464a3c3b70082d0c
+PODFILE CHECKSUM: cc705df71b2417b643458fb5624fbd550aa21856
 
 COCOAPODS: 1.10.1
